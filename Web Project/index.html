@@ -1,0 +1,183 @@
+ <!DOCTYPE html>
+<html> 
+<head> 
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title> The Match Doctor Website </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">    
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body> 
+  <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/banner.jpg"></a>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" onclick="hideMenu()"></i> 
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">REGISTRATION</a></li>
+                    <li><a href="">CONTACTS</a></li>
+                    <li><a href="">ABOUT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+ 
+<div class="text-box">
+    <h1> Your Matching Doctor</h1>
+    <p> Love Is A Beautiful Feeling And We Want To Share It With You<br> This is A Safe Space For You To Get Exactly What You Want. </p>
+    <a href="" class="hero-btn">Visit Us To Know More</a>
+</div> 
+
+</section>
+
+
+</section>
+
+<!------About---->
+
+<section class="love">
+    <h1>Our Services</h1>
+       <p>The Match Doctor Has An Absolute Aim Of Making<br> You Compatible With Your Desired Partner.</p>
+
+        <div class="row">
+            <div class="love-col">
+                <img src="images/about.jpg">
+                <h3>Aim</h3>
+                <p> The Aim of Our Services is for you to get what you want in full description.<br>Your wish is our fulfillment.</p>
+            </div>
+            <div class="love-col">
+                <img src="images/handslove.jpg">
+                <h3>Specific</h3>
+                <p>Being Your Match Doctor your specifics matter to us <br>to give you what exactly you want.</p>
+            </div>
+            <div class="love-col">
+                <img src="images/logo.jpg">
+                <h3>General Aspect</h3>
+                <p> The General Aspect of your wishes also play a huge factor in this <br> as very detail matters.</p>
+            </div>
+        </div>
+    
+</section>
+
+<!-----Blog---->
+
+<section class="blog">
+    <h1>Our Main Services</h1>
+    <p>Everything is love and our services make sure you get exactly what you are looking for.<br>You do not have 
+        to compromise on what exactly you want.<br>The love of your life is our match away.</p>
+</section>
+
+
+<!----REGISTRATION-->
+<section class="registration">
+<body>
+    <h1>Get To Register And Have A Space With Us</h1>
+    <p>The Match Doctor website Allows You To Have Your Own Private Log In Under A 
+        Registered Account.</p>
+    
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+               <div id="btn"></div> 
+               <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+               <button type="button" class="toggle-btn" onclick="register()">Register</button>
+        </div> 
+        <div class="social-icons">
+            <img src="images/fb.png">
+            <img src="images/tw.png">
+            <img src="images/gp.png">    
+        </div>
+        <form id="login" class="input-group">
+            <input type="text" class="input-field" placeholder="User Id" required>
+            <input type="text" class="input-field" placeholder="Enter Password" required>
+            <input type="checkbox" class="chech-box"><span>Remember Password</span> 
+            <button type="submit" class="submit-btn">Log in</button>   
+        </form>
+        <form  id="register" class="input-group">
+            <input type="text" class="input-field" placeholder="User Id" required>
+            <input type="email" class="input-field" placeholder="Email Id" required>
+            <input type="text" class="input-field" placeholder="Enter Password" required>
+            <input type="checkbox" class="chech-box"><span>I agree to the terms & conditions</span> 
+            <button type="submit" class="submit-btn">Register</button> 
+        </form>    
+    </div>
+        
+    </div>    
+
+    <script>
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+    var z = document.getElementById("btn");
+
+    function register(){
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+    }
+    function login(){
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0px";
+    }
+
+
+    </script>
+
+</body>
+</section>
+       
+        
+<!----Call To Action---->
+
+<section class="cta">
+<body>
+    <h1> Your Heart Desires Is a Match Away<br> You Reach Out We Connect</h1>
+    <a href="" class="hero-btn">CONTACT US</a>
+</section>
+
+
+<!----------Footer------->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <P>You can Find Us Or Leave A Message Here:</P>
+    <div class="icons">
+        <i class="fa fa-envelope-open"></i>
+           <h4>aubrey.co.ke</h4>
+        <i class="fa fa-phone"></i>
+           <h4>+254708575485</h4>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+<!------JavaScript for Toggle Menu----->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+
+
+
+
+
+</body>
+
+</body>    
+</html>
